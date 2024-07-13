@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WATER</title>
+
+  <style>
+    body {
+      color: blue;
+      font-size: 40px;
+    }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    details {
+      position: relative;
+    }
+
+    .direction {
+      transform: rotate(var(--direction)) translate(0, -1em);
+      position: absolute;
+      font-size: 2em;
+
+      background-color: rgba(0, 255, 0, 0.3);
+    }
+
+    li > div > .direction {
+      color: red;
+      transform: rotate(var(--direction));
+    }
+
+    div {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    .reflect {
+      
+      right: 0;
+      transform: scaleX(-1);
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <ol>
+    <li>
+      <ol>
+        <li>
+          <details open>
+            <summary>
+              <div class="direction" style="--direction: 80deg;">&rarr;</div>
+            </summary>
+            <li>
+              <ol>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 90deg;">&rarr;</div>
+                    </summary>
+                    <ol>
+                      <li>
+                        <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                      </li>
+                      <li>
+                        <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                      </li>
+                      <li>
+                        <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                      </li>
+                      <li>
+                        <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                      </li>
+                    </ol>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                    </summary>
+                    <li>
+                      <ol>
+                        <li>
+                          <details open>
+                            <summary>
+                              <div class="direction" style="--direction: 90deg;">&rarr;</div>
+                            </summary>
+                            <ol>
+                              <li>
+                                <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                              </li>
+                              <li>
+                                <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                              </li>
+                              <li>
+                                <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                              </li>
+                            </ol>
+                          </details>
+                        </li>
+                        <li>
+                          <details open>
+                            <summary>
+                              <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                            </summary>
+                            <ol>
+                              <li>
+                                <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                              </li>
+                            </ol>
+                          </details>
+                        </li>
+                        <li>
+                          <ol>
+                            <li>
+                              <details open>
+                                <summary>
+                                  <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                                </summary>
+                              <li>
+                                <details open>
+                                  <summary>
+                                    <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                                  </summary>
+                                  <ol>
+                                    <li>
+                                      <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                                    </li>
+                                  </ol>
+                                </details>
+                              </li>
+                              <li></li>
+                              </details>
+                            </li>
+                            
+                            <li>
+                              <details open>
+                                <summary>
+                                  <div class="direction" style="--direction: 75deg;">&rarr;</div>
+                                </summary>
+                                <ol>
+                                  <li>
+                                    <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                                  </li>
+                                  <li>
+                                    <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                                  </li>
+                                </ol>
+                              </details>
+                            </li>
+                          </ol>
+                        </li>
+                        <li></li>
+                      </ol>
+                    </li>
+                  </details>
+                </li>
+                <li></li>
+              </ol>
+            </li>
+            <li></li>
+            <li>
+              <ol>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 75deg;">&rarr;</div>
+                    </summary>
+                    <ol>
+                      <li></li>
+                      <li>
+                        <ol>
+                          <li></li>
+                          <li></li>
+                        </ol>
+                      </li>
+                      <li>
+                        <ol>
+                          <li></li>
+                        </ol>
+                      </li>
+                      <li>
+                        <ol>
+                          <li>
+                            <details open>
+                              <summary>
+                                <div class="direction" style="--direction: 75deg;">&rarr;</div>
+                              </summary>
+                              <ol>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ol>
+                            </details>
+                          </li>
+                          <li>
+                            <details open>
+                              <summary>
+                                <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                              </summary>
+                            </details>
+                          </li>
+                          <li>
+                            <details open>
+                              <summary>
+                                <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                              </summary>
+                            </details>
+                          </li>
+                          <li></li>
+                          <li></li>
+                        </ol>
+                      </li>
+                      <li></li>
+                    </ol>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                    </summary>
+                    <ol>
+
+                    </ol>
+                  </details>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <ol>
+                <li><details open>
+                  <summary>
+                    <div class="direction" style="--direction: 130deg;">&rarr;</div>
+                  </summary>
+                  <ol>
+                
+                  </ol>
+                </details></li>
+                <li>
+                  <ol>
+                    <li>
+                      <details open>
+                        <summary>
+                          <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                        </summary>
+                        <ol>
+                      
+                        </ol>
+                      </details>
+                    </li>
+                    <li>
+                      <details open>
+                        <summary>
+                          <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                        </summary>
+                        <ol>
+                      
+                        </ol>
+                      </details>
+                    </li>
+                    <li>
+                      <ol>
+                        <li>
+                          <details open>
+                            <summary>
+                              <div class="direction" style="--direction: 140deg;">&rarr;</div>
+                            </summary>
+                            <ol>
+                          
+                            </ol>
+                          </details>
+                        </li>
+                        <li>
+                          <details open>
+                            <summary>
+                              <div class="direction" style="--direction: 150deg;">&rarr;</div>
+                            </summary>
+                            <ol>
+                          
+                            </ol>
+                          </details>
+                        </li>
+                        <li>
+                          <details open>
+                            <summary>
+                              <div class="direction" style="--direction: 130deg;">&rarr;</div>
+                            </summary>
+                            <ol>
+                          
+                            </ol>
+                          </details>
+                        </li>
+                        <li>
+                          <details open>
+                            <summary>
+                              <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                            </summary>
+                            <ol>
+                          
+                            </ol>
+                          </details>
+                        </li>
+                      </ol>
+                    </li>
+                    <li>
+                      <details open>
+                        <summary>
+                          <div class="direction" style="--direction: 50deg;">&rarr;</div>
+                        </summary>
+                        <ol>
+                      
+                        </ol>
+                      </details>
+                    </li>
+                    <li>
+                      <details open>
+                        <summary>
+                          <div class="direction" style="--direction: 30deg;">&rarr;</div>
+                        </summary>
+                        <ol>
+                      
+                        </ol>
+                      </details>
+                    </li>
+                    <li>
+                      <details open>
+                        <summary>
+                          <div class="direction" style="--direction: 15deg;">&rarr;</div>
+                        </summary>
+                        <ol>
+                          <li>
+                            <details open>
+                              <summary>
+                                <div class="direction" style="--direction: 50deg;">&rarr;</div>
+                              </summary>
+                            </details>
+                          </li>
+                          <li>
+                            <details open>
+                              <summary>
+                                <div class="direction" style="--direction: 80deg;">&rarr;</div>
+                              </summary>
+                            </details>
+                          </li>
+                          <li>
+                            <details open>
+                              <summary>
+                                <div class="direction" style="--direction: 60deg;">&rarr;</div>
+                              </summary>
+                            </details>
+                          </li>
+                        </ol>
+                      </details>
+                    </li>
+                  </ol>
+                </li>
+                <li></li>
+              </ol>
+            </li>
+            <li>
+              <ol>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                    </summary>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                    </summary>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 130deg;">&rarr;</div>
+                    </summary>
+                  </details>
+                </li>
+                <li>
+                  <ol>
+                    <li>
+                      <details open>
+                        <summary>
+                          <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                        </summary>
+                      </details>
+                    </li>
+                    <li>
+                      <details open>
+                        <summary>
+                          <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                        </summary>
+                      </details>
+                    </li>
+                    <li>
+                      <details open>
+                        <summary>
+                          <div class="direction" style="--direction: 160deg;">&rarr;</div>
+                        </summary>
+                      </details>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 200deg;">&rarr;</div>
+                    </summary>
+                  </details>
+                </li>
+              </ol>
+            </li>
+          </details>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</div>
+  
+  <div class="reflect">
+    <ol>
+      <li>
+        <ol>
+          <li>
+            <details open>
+              <summary>
+                <div class="direction" style="--direction: 80deg;">&rarr;</div>
+              </summary>
+          <li>
+            <ol>
+              <li>
+                <details open>
+                  <summary>
+                    <div class="direction" style="--direction: 90deg;">&rarr;</div>
+                  </summary>
+                  <ol>
+                    <li>
+                      <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                    </li>
+                    <li>
+                      <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                    </li>
+                    <li>
+                      <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                    </li>
+                    <li>
+                      <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                    </li>
+                  </ol>
+                </details>
+              </li>
+              <li>
+                <details open>
+                  <summary>
+                    <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                  </summary>
+              <li>
+                <ol>
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 90deg;">&rarr;</div>
+                      </summary>
+                      <ol>
+                        <li>
+                          <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                        </li>
+                        <li>
+                          <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                        </li>
+                        <li>
+                          <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                        </li>
+                      </ol>
+                    </details>
+                  </li>
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                      </summary>
+                      <ol>
+                        <li>
+                          <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                        </li>
+                      </ol>
+                    </details>
+                  </li>
+                  <li>
+                    <ol>
+                      <li>
+                        <details open>
+                          <summary>
+                            <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                          </summary>
+                      <li>
+                        <details open>
+                          <summary>
+                            <div class="direction" style="--direction: 70deg;">&rarr;</div>
+                          </summary>
+                          <ol>
+                            <li></li>
+                          </ol>
+                        </details>
+                      </li>
+                      <li></li>
+                      </details>
+                  </li>
+    
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 75deg;">&rarr;</div>
+                      </summary>
+                      <ol>
+                        <li></li>
+                        <li></li>
+                      </ol>
+                    </details>
+                  </li>
+                </ol>
+              </li>
+              <li></li>
+            </ol>
+          </li>
+          </details>
+      </li>
+      <li></li>
+    </ol>
+    </li>
+    <li></li>
+    <li>
+      <ol>
+        <li>
+          <details open>
+            <summary>
+              <div class="direction" style="--direction: 75deg;">&rarr;</div>
+            </summary>
+            <ol>
+              <li></li>
+              <li>
+                <ol>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li></li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 75deg;">&rarr;</div>
+                      </summary>
+                      <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ol>
+                    </details>
+                  </li>
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                      </summary>
+                    </details>
+                  </li>
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                      </summary>
+                    </details>
+                  </li>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </li>
+              <li></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>
+              <div class="direction" style="--direction: 120deg;">&rarr;</div>
+            </summary>
+            <ol>
+    
+            </ol>
+          </details>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <ol>
+        <li>
+          <details open>
+            <summary>
+              <div class="direction" style="--direction: 130deg;">&rarr;</div>
+            </summary>
+            <ol>
+    
+            </ol>
+          </details>
+        </li>
+        <li>
+          <ol>
+            <li>
+              <details open>
+                <summary>
+                  <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                </summary>
+                <ol>
+    
+                </ol>
+              </details>
+            </li>
+            <li>
+              <details open>
+                <summary>
+                  <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                </summary>
+                <ol>
+    
+                </ol>
+              </details>
+            </li>
+            <li>
+              <ol>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 140deg;">&rarr;</div>
+                    </summary>
+                    <ol>
+    
+                    </ol>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 150deg;">&rarr;</div>
+                    </summary>
+                    <ol>
+    
+                    </ol>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 130deg;">&rarr;</div>
+                    </summary>
+                    <ol>
+    
+                    </ol>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>
+                      <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                    </summary>
+                    <ol>
+    
+                    </ol>
+                  </details>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <details open>
+                <summary>
+                  <div class="direction" style="--direction: 50deg;">&rarr;</div>
+                </summary>
+                <ol>
+    
+                </ol>
+              </details>
+            </li>
+            <li>
+              <details open>
+                <summary>
+                  <div class="direction" style="--direction: 30deg;">&rarr;</div>
+                </summary>
+                <ol>
+    
+                </ol>
+              </details>
+            </li>
+            <li>
+              <details open>
+                <summary>
+                  <div class="direction" style="--direction: 15deg;">&rarr;</div>
+                </summary>
+                <ol>
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 50deg;">&rarr;</div>
+                      </summary>
+                    </details>
+                  </li>
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 80deg;">&rarr;</div>
+                      </summary>
+                    </details>
+                  </li>
+                  <li>
+                    <details open>
+                      <summary>
+                        <div class="direction" style="--direction: 60deg;">&rarr;</div>
+                      </summary>
+                    </details>
+                  </li>
+                </ol>
+              </details>
+            </li>
+          </ol>
+        </li>
+        <li></li>
+      </ol>
+    </li>
+    <li>
+      <ol>
+        <li>
+          <details open>
+            <summary>
+              <div class="direction" style="--direction: 100deg;">&rarr;</div>
+            </summary>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>
+              <div class="direction" style="--direction: 120deg;">&rarr;</div>
+            </summary>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>
+              <div class="direction" style="--direction: 130deg;">&rarr;</div>
+            </summary>
+          </details>
+        </li>
+        <li>
+          <ol>
+            <li>
+              <details open>
+                <summary>
+                  <div class="direction" style="--direction: 100deg;">&rarr;</div>
+                </summary>
+              </details>
+            </li>
+            <li>
+              <details open>
+                <summary>
+                  <div class="direction" style="--direction: 120deg;">&rarr;</div>
+                </summary>
+              </details>
+            </li>
+            <li>
+              <details open>
+                <summary>
+                  <div class="direction" style="--direction: 160deg;">&rarr;</div>
+                </summary>
+              </details>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <details open>
+            <summary>
+              <div class="direction" style="--direction: 200deg;">&rarr;</div>
+            </summary>
+          </details>
+        </li>
+      </ol>
+    </li>
+    </details>
+    </li>
+    </ol>
+    </li>
+    </ol>
+  </div>
+  
+</body>
+</html>
